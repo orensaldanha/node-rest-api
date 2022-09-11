@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/json', (req, res) => {
-  res.json({data: "Hello World"});
+  res.json(req.query);
 })
 
 app.listen(port, () => {
